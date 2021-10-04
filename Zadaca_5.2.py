@@ -24,4 +24,4 @@ def usporedba(x, y):
     return lotto_1, lotto_2
 
 
-lutrija =usporedba(generator(1, 20), generator(1, 20))
+lutrija = usporedba(generator(1, 20), generator(1, 20))

@@ -53,3 +53,4 @@ lutrija = usporedba(generator(1, 20), unesena_lista)
 
 
 
+
