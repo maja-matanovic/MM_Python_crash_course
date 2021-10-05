@@ -7,16 +7,20 @@ if iznos_kazne.isdigit():
     valuta = input("hrk/eur? ")
 else:
     valuta = iznos_kazne.split()[-1]
+    valuta = valuta[-3]
 
-if valuta == "eur":
+if valuta == "e":
     print("Unesena valuta je eur")
     iznos_kazne = iznos_kazne.split()[0]
+    iznos_kazne = iznos_kazne.strip("eur")
+    iznos_kazne = iznos_kazne.strip(" ")
     iznos_kazne = int(iznos_kazne)
     iznos_kazne = iznos_kazne * 7.65
     print("Iznos u kunama je " + str(iznos_kazne) + " hrk.")
 else:
     iznos_kazne = iznos_kazne.split()[0]
-    iznos_kazne = iznos_kazne.strip()
+    iznos_kazne = iznos_kazne.strip("hrk")
+    iznos_kazne = iznos_kazne.strip(" ")
     iznos_kazne = int(iznos_kazne)
 
 
