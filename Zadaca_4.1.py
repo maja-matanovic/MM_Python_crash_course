@@ -28,6 +28,7 @@ def play_game():
     while game_is_over() is False:
         move = input("Player " + current_player + ": choose the position from 1-9: ")
         move = int(move) - 1
+        # TODO: Ako se unese broj izvan rangea 1-9, "list index out of range" error
         if board[move] == "_":
            board[move] = current_player
            display_board()
@@ -46,7 +47,6 @@ def play_game():
                 print(player_1 + " wins")
         else:
            print("It's a tie.")
-
 
 
 def win():

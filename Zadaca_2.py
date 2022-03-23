@@ -16,6 +16,8 @@ print(sentence_3.replace("SPACE", "\n"))
 
 # zadatak 4
 sentence_4 = "jasamigormancesvirambubnjeveivolimte"
+# TODO: Vjerujem da znas to, ali mogla si ovo jednostavnije napraviti - sentence_4[-7:].
+#  Lijepo sto si htjela i razmak dodati :)
 print(sentence_4[29:34] + " " + sentence_4[34:])
 
 # zadatak 5

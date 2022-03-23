@@ -6,6 +6,8 @@ def automehanicar(ime):
     remen = float(input("Popravak zupčastog remena: ").strip(" kn"))
     branik = float(input("Popravak branika: ").strip(" kn"))
     popust = float(input("Popust: ").strip(" %"))
+    # TODO: Nedostaje ti provjera da popust nije veci od 100 i da nije negativna vrijednost.
+    #  Boundary value analysis ovo-ono :) Osim toga, odlicno!
     suma = (remen + branik) - (popust / 100) * (remen + branik)
     print("Ukupno: " + str(suma))
     return suma
